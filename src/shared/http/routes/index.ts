@@ -1,13 +1,8 @@
-//import productRouter from '@modules/products/routes/products.routes';
+import moviesRouter from '@modules/movies/routes/movies.routes';
 import {Router} from 'express';
 
 const routes = Router();
 
-//routes.use('/products', productRouter)
-
-/*  apenas para teste
-    routes.get('/', (request, response) => {
-    return response.json({message: "Hello Dev!"});
-})*/
+routes.use('/products', moviesRouter)
 
 export default routes;

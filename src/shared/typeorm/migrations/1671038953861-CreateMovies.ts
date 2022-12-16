@@ -23,7 +23,7 @@ export class CreateMovies1671038953861 implements MigrationInterface {
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('products');
+        await queryRunner.dropTable('movies');
     }
 
 

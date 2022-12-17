@@ -3,6 +3,6 @@ import {Router} from 'express';
 
 const routes = Router();
 
-routes.use('/products', moviesRouter)
+routes.use('/movies', moviesRouter)
 
 export default routes;

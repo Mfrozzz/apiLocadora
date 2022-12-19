@@ -1,9 +1,9 @@
 import { Request, Response } from "express";
-import CreateMovieService from "src/services/CreateMovieService";
-import DeleteMovieService from "src/services/DeleteMovieService";
-import ListMovieService from "src/services/ListMovieService";
-import ShowMovieService from "src/services/ShowMovieService";
-import UpdateMovieService from "src/services/UpdateMovieService";
+import CreateMovieService from "src/services/movie/CreateMovieService";
+import DeleteMovieService from "src/services/movie/DeleteMovieService";
+import ListMovieService from "src/services/movie/ListMovieService";
+import ShowMovieService from "src/services/movie/ShowMovieService";
+import UpdateMovieService from "src/services/movie/UpdateMovieService";
 
 export default class MoviesController{
     public async index(request: Request, response: Response): Promise<Response>{
